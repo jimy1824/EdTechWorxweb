@@ -1,0 +1,147 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pagecontant %}
+
+
+
+	<!-- banner -->
+	<div class="banner-edulearn-2">
+		<!-- navigation -->
+		<div class="navigation-educationsls">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
+				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				 aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+					<ul class="navbar-nav justify-content-center">
+						<li class="nav-item active">
+							<a class="nav-link text-white" href="{% url 'home' %}">Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link text-white" href="{% url 'courses_list' %}">Courses</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link text-white" href="{% url 'blog' %}">Blog</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link text-white" href="{% url 'blog' %}">Events</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link text-white" href="{% url 'gallery' %}">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="{% url 'about' %}">About Us</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link text-white" href="{% url 'contact' %}">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- //navigation -->
+	</div>
+	<!-- breadcrumb -->
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="index.html">Home</a>
+			</li>
+			<li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+		</ol>
+	</nav>
+	<!-- breadcrumb -->
+	<!-- //banner -->
+
+	<!-- contact -->
+	<div class="contact py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="title text-capitalize font-weight-light text-dark text-center mb-5">contact
+				<span class="font-weight-bold">us</span>
+			</h3>
+			<div class="row contact-grids edulearn-1 py-sm-5 pb-sm-0 pb-5">
+				<div class="col-sm-4 contact-grid edulearninfo-6 mt-sm-0 mt-2">
+					<div class="contact-grid1 text-center">
+						<div class="con-ic">
+							<i class="fas fa-map-marker-alt rounded-circle"></i>
+						</div>
+						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Address</h4>
+						<p>Defence road phase5 LUMS Lahore Punjab
+							<label> Pakistan</label>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4 contact-grid edulearninfo-6 my-sm-0 my-4">
+					<div class="contact-grid1 text-center">
+						<div class="con-ic">
+							<i class="fas fa-phone rounded-circle"></i>
+						</div>
+						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Call Us</h4>
+						<p>+92310-8451643
+							<label>+92310-8451643</label>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4 contact-grid edulearninfo-6">
+					<div class="contact-grid1 text-center">
+						<div class="con-ic">
+							<i class="fas fa-envelope-open rounded-circle"></i>
+						</div>
+						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Email</h4>
+						<p>
+							<a href="mailto:info@edtechworx.com">info@edtechworx.com</a>
+							<label>
+								<a href="mailto:info@edtechworx.com">info@edtechworx.com</a>
+							</label>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- form -->
+			<form action="#" method="post">
+				<div class="contact-grids1 educationsedulearn-6">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">First Name</label>
+							<input type="text" class="form-control" name="First Name" placeholder="" required="">
+						</div>
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Last Name</label>
+							<input type="text" class="form-control" name="Last Name" placeholder="" required="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">Subject</label>
+							<input type="text" class="form-control" name="Subject" placeholder="" required="">
+						</div>
+						<div class="col-md-6 col-sm-6 contact-form1 form-group">
+							<label class="col-form-label">E-mail</label>
+							<input type="email" class="form-control" name="Email" placeholder="" required="">
+						</div>
+					</div>
+					<div class="contact-me animated wow slideInUp form-group">
+						<label class="col-form-label">Message</label>
+						<textarea name="Message" class="form-control" placeholder="" required=""> </textarea>
+					</div>
+					<div class="contact-form">
+						<input type="submit" value="Submit">
+					</div>
+				</div>
+			</form>
+			<!-- //form -->
+		</div>
+	</div>
+	<!-- //contact -->
+
+
+{% endblock %}
+
+
+
+
